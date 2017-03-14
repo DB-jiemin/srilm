@@ -1,0 +1,11 @@
+本文档主要记录遇到的错误及其解决方案：
+1.在运行run.sh脚本时，可能遇到libfstscript.so.1文件没找到，可以使用find命令在kaldi文件下搜索这个文件,然后把这个文件的全路径加到path.sh中即可
+2.ngram-count
+   进入到kaldi的tools目录，安装install_srilm.sh脚本,然后即可使用 
+    ngram-count -order 1 -text data/local/corpus.txt -lm source.arpa -vocab data/dict/lexicon.txt
+     -order  指定n-gram的n是多少,默认是3
+     -text   提供输入的语料文件,统计该语料中的n-gram
+     -lm     指定输出的lm文件
+     -vocab  用来指定对哪些词进行n-gram统计
+     -wbdiscount1 表示1gram Witten-Bell discounting
+     note:参数顺序无所谓
