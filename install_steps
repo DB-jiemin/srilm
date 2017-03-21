@@ -1,0 +1,5 @@
+下载的sirlm-*-.tar.gz解压,然后计入srilm文件夹
+1.export SRILM=`pwd`
+2.make
+3.cd test
+4.make all
