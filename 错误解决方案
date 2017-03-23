@@ -9,3 +9,5 @@
      -vocab  用来指定对哪些词进行n-gram统计
      -wbdiscount1 表示1gram Witten-Bell discounting
      note:参数顺序无所谓
+
+如果使用 -maxent选项需要安装liblbfgs
